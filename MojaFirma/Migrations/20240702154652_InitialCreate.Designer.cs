@@ -12,7 +12,7 @@ using MojaFirma.Data;
 namespace MojaFirma.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240702135807_InitialCreate")]
+    [Migration("20240702154652_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

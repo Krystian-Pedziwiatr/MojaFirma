@@ -62,7 +62,7 @@ namespace MojaFirma.Controllers
                 }
                 ModelState.AddModelError(string.Empty, "Invalid login attempt.");
             }
-            return View(model);
+            return RedirectToAction("Home", "Index");
         }
 
         [HttpPost]
@@ -70,7 +70,7 @@ namespace MojaFirma.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Home", "Index");
         }
     }
 }

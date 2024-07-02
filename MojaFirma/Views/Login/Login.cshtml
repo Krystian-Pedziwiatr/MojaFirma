@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
     ViewData["Title"] = "Logowanie";
     Layout = null;
 }
@@ -7,15 +10,16 @@
 
 <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form id="signup-form" method="post" asp-action="Register" asp-controller="Login">
+        <form id="signup-form" method="post" asp-area="Identity" asp-page="/Account/Register">
             <h1>Utwórz konto</h1>
             <span>Podaj swoje imię, adres email oraz stwórz hasło</span>
-            <input type="text" name="Name" placeholder="Imię" required />
-            <input type="email" name="Email" placeholder="Email" required />
-            <input type="password" name="Password" placeholder="Hasło" required />
+            <input type="text" name="Input.Name" placeholder="Imię" required />
+            <input type="email" name="Input.Email" placeholder="Email" required />
+            <input type="password" name="Input.Password" placeholder="Hasło" required />
+            <input type="password" name="Input.ConfirmPassword" placeholder="Potwierdź hasło" required />
             <div class="wrapper">
-                <input type="radio" name="Role" id="option-1" value="employee" checked>
-                <input type="radio" name="Role" id="option-2" value="employer">
+                <input type="radio" name="Input.Role" id="option-1" value="employee" checked>
+                <input type="radio" name="Input.Role" id="option-2" value="employer">
                 <label for="option-1" class="option option-1">
                     <div class="dot"></div>
                     <span> Pracownik</span>
@@ -25,15 +29,15 @@
                     <span> Pracodawca</span>
                 </label>
             </div><br />
-            <button type="submit">Zarejestruj</button>
+            <button type="submit" value="Register">Zarejestruj</button>
         </form>
     </div>
     <div class="form-container sign-in-container">
-        <form id="signin-form" method="post" asp-action="Login" asp-controller="Login">
+        <form id="signin-form" method="post" asp-area="Identity" asp-page="/Account/Login">
             <h1>Zaloguj się</h1>
-            <input type="email" name="Email" placeholder="Email" required />
-            <input type="password" name="Password" placeholder="Hasło" required />
-            <button type="submit">Zaloguj</button>
+            <input type="email" name="Input.Email" placeholder="Email" required />
+            <input type="password" name="Input.Password" placeholder="Hasło" required />
+            <button type="submit" value="Login">Zaloguj</button>
         </form>
     </div>
     <div class="overlay-container">

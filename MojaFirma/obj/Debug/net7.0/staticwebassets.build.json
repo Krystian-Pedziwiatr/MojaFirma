@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z4SLqyRwugZeUqfm2BuSe+nfrQb8glP43mcf1uaxbHk=",
+  "Hash": "SbiDJdUzw3DK8ppbdfFzlqyOUV/4aQy37A+jmVIFfM8=",
   "Source": "MojaFirma",
   "BasePath": "_content/MojaFirma",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "/Users/krystian/Projects/MojaFirma/MojaFirma/obj/Debug/net7.0/scopedcss/projectbundle/MojaFirma.bundle.scp.css"
     },
     {
+      "Identity": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/css/home.css",
+      "SourceId": "MojaFirma",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/",
+      "BasePath": "_content/MojaFirma",
+      "RelativePath": "css/home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/home.css"
+    },
+    {
       "Identity": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/css/login.css",
       "SourceId": "MojaFirma",
       "SourceType": "Discovered",
@@ -1970,6 +1987,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/images/background.jpeg"
+    },
+    {
+      "Identity": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/lib/images/Logo.png",
+      "SourceId": "MojaFirma",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/",
+      "BasePath": "_content/MojaFirma",
+      "RelativePath": "lib/images/Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/lib/images/Logo.png"
     },
     {
       "Identity": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",

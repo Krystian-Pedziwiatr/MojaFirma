@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/MojaFirma.bundle.scp.css"
     },
     {
+      "Id": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/css/home.css",
+      "PackagePath": "staticwebassets/css/home.css"
+    },
+    {
       "Id": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/css/login.css",
       "PackagePath": "staticwebassets/css/login.css"
     },
@@ -211,6 +215,10 @@
     {
       "Id": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/lib/images/.DS_Store",
       "PackagePath": "staticwebassets/lib/images/.DS_Store"
+    },
+    {
+      "Id": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/lib/images/Logo.png",
+      "PackagePath": "staticwebassets/lib/images/Logo.png"
     },
     {
       "Id": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/lib/images/background.jpeg",

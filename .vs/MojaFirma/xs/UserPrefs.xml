@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{BDBFE073-E6A0-4784-B42A-2F2EF864E140}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MojaFirma/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="MojaFirma/Program.cs" Line="41" Column="46" />
+      <File FileName="MojaFirma/Controllers/LoginController.cs" Line="51" Column="1" />
+      <File FileName="MojaFirma/Data/ApplicationDbContext.cs" Line="7" Column="60" />
+      <File FileName="MojaFirma/Views/Login/Login.cshtml" Line="9" Column="1" />
+      <File FileName="MojaFirma/Models/RegisterViewModel.cs" Line="20" Column="69" />
+      <File FileName="MojaFirma/Views/Home/Index.cshtml" Line="18" Column="13" />
+      <File FileName="MojaFirma/Views/Shared/_Layout.cshtml" Line="15" Column="41" />
+      <File FileName="MojaFirma/Views/Shared/_LoginPartial.cshtml" Line="25" Column="1" />
+      <File FileName="MojaFirma/wwwroot/css/site.css" Line="37" Column="48" />
+      <File FileName="MojaFirma/wwwroot/css/login.css" Line="29" Column="24" />
+      <File FileName="MojaFirma/Controllers/HomeController.cs" Line="19" Column="23" />
+      <File FileName="MojaFirma/Models/LoginViewModel.cs" Line="1" Column="1" />
+      <File FileName="MojaFirma/wwwroot/css/home.css" Line="39" Column="48" />
+      <File FileName="MojaFirma/Views/Home/Privacy.cshtml" Line="30" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MojaFirma">
+            <Node name="MojaFirma">
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="images" expanded="True">
+                    <Node name="Logo.png" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MojaFirma PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
