@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Logowanie";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form id="signup-form" method="post" asp-action="Register" asp-controller="Login">
+            <h1>Utwórz konto</h1>
+            <span>Podaj swoje imię, adres email oraz stwórz hasło</span>
+            <input type="text" name="Name" placeholder="Imię" required />
+            <input type="email" name="Email" placeholder="Email" required />
+            <input type="password" name="Password" placeholder="Hasło" required />
+            <div class="wrapper">
+                <input type="radio" name="Role" id="option-1" value="employee" checked>
+                <input type="radio" name="Role" id="option-2" value="employer">
+                <label for="option-1" class="option option-1">
+                    <div class="dot"></div>
+                    <span> Pracownik</span>
+                </label>
+                <label for="option-2" class="option option-2">
+                    <div class="dot"></div>
+                    <span> Pracodawca</span>
+                </label>
+            </div><br />
+            <button type="submit">Zarejestruj</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form id="signin-form" method="post" asp-action="Login" asp-controller="Login">
+            <h1>Zaloguj się</h1>
+            <input type="email" name="Email" placeholder="Email" required />
+            <input type="password" name="Password" placeholder="Hasło" required />
+            <button type="submit">Zaloguj</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Posiadasz już konto?</h1>
+                <p>Przejdź do strony logowania by wpisać swoje dane</p>
+                <button class="ghost" id="signIn">Zaloguj się</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Nie posiadasz jeszcze konta?</h1>
+                <p>Stwórz swój profil by móc korzystać z aplikacji</p>
+                <button class="ghost" id="signUp">Zarejestruj się</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <script src="~/js/login.js" asp-append-version="true"></script>
+</footer>
