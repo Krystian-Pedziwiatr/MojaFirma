@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mojafirma:
+    image: ${DOCKER_REGISTRY-}mojafirma
+    build:
+      context: .
+      dockerfile: MojaFirma/Dockerfile

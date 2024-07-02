@@ -60,9 +60,11 @@ namespace MojaFirma.Controllers
                 {
                     return RedirectToAction("Index", "Home");
                 }
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                
             }
-            return RedirectToAction("Home", "Index");
+            
+            return RedirectToAction("Login", "Login");
+
         }
 
         [HttpPost]

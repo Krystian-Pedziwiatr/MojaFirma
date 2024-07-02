@@ -38,6 +38,10 @@
             <input type="email" name="Input.Email" placeholder="Email" required />
             <input type="password" name="Input.Password" placeholder="Hasło" required />
             <button type="submit" value="Login">Zaloguj</button>
+            @if (ViewData["ErrorMessage"] != null)
+            {
+                <span class="text-danger">@ViewData["ErrorMessage"]</span>
+            }
         </form>
     </div>
     <div class="overlay-container">
