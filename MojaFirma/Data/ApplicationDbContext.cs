@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MojaFirma.Models;
 
 namespace MojaFirma.Data
 {
@@ -11,10 +12,14 @@ namespace MojaFirma.Data
         {
         }
 
+        public DbSet<Vacation> Vacations { get; set; }
+      
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            // Dodatkowe konfiguracje modelu, jeśli są potrzebne
+
+           
         }
     }
 }

@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace MojaFirma.Models
 {
-    public class LoginViewModel
+    public class LoginViewModel 
     {
 
         [Display(Name = "Email")]

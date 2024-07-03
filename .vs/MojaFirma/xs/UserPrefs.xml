@@ -1,41 +1,63 @@
 ﻿<Properties StartupConfiguration="{BDBFE073-E6A0-4784-B42A-2F2EF864E140}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MojaFirma/Controllers/LoginController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MojaFirma/Controllers/VacationManagerController.cs">
     <Files>
-      <File FileName="MojaFirma/Controllers/LoginController.cs" Line="63" Column="17" />
-      <File FileName="MojaFirma/Models/LoginViewModel.cs" Line="21" Column="1" />
-      <File FileName="MojaFirma/Views/Login/Login.cshtml" Line="44" Column="14" />
-      <File FileName="MojaFirma/Models/UserModel.cs" Line="1" Column="1" />
+      <File FileName="MojaFirma/Controllers/LoginController.cs" Line="31" Column="1" />
+      <File FileName="MojaFirma/Views/Login/Login.cshtml" Line="31" Column="45" />
+      <File FileName="MojaFirma/Controllers/VacationManagerController.cs" Line="13" Column="1" />
+      <File FileName="MojaFirma/Controllers/HomeController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MojaFirma" expanded="True">
             <Node name="MojaFirma">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" selected="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers">
+                <Node name="VacationManagerController.cs" selected="True" />
               </Node>
-              <Node name="Areas" expanded="True">
-                <Node name="Identity" expanded="True">
-                  <Node name="Pages" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Views">
+                <Node name="AddVacation" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="lib" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MojaFirma" expanded="True">
+            <Node name="MojaFirma">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers">
+                <Node name="VacationManagerController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views">
+                <Node name="AddVacation" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="lib" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.MojaFirma PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

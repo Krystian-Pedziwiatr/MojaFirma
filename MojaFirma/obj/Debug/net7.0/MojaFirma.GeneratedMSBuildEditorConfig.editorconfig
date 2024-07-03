@@ -16,8 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/krystian/Projects/MojaFirma/MojaFirma
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/krystian/Projects/MojaFirma/MojaFirma/Areas/Identity/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/krystian/Projects/MojaFirma/MojaFirma/Views/AddVacation/AddVacation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRkVmFjYXRpb24vQWRkVmFjYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/krystian/Projects/MojaFirma/MojaFirma/Views/Calendar/Calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FsZW5kYXIvQ2FsZW5kYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/krystian/Projects/MojaFirma/MojaFirma/Views/Home/Home.cshtml]
@@ -46,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/krystian/Projects/MojaFirma/MojaFirma/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/krystian/Projects/MojaFirma/MojaFirma/Views/VacationManager/VacationManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmFjYXRpb25NYW5hZ2VyL1ZhY2F0aW9uTWFuYWdlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/krystian/Projects/MojaFirma/MojaFirma/Views/_ViewImports.cshtml]

@@ -1,40 +1,63 @@
-﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
-using MojaFirma.Models;
-
-namespace MojaFirma.Controllers;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MojaFirma.Data;
+using System.Security.Claims;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ApplicationDbContext _context;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ApplicationDbContext context)
     {
-        _logger = logger;
+        _context = context;
     }
 
-    public IActionResult Index()
+    public IActionResult Privacy()
+    {
+        return View("Privacy");
+    }
+
+    public async Task<IActionResult> Index()
     {
         if (User.Identity.IsAuthenticated)
         {
+            // Pobierz ID zalogowanego użytkownika
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (userId != null)
+            {
+                // Pobierz wszystkie urlopy użytkownika
+                var vacations = await _context.Vacations
+                    .Where(v => v.UserId == userId)
+                    .ToListAsync();
+
+                // Oblicz wykorzystane dni urlopu
+                int usedVacationDays = 0;
+                foreach (var vacation in vacations)
+                {
+                    usedVacationDays += (int)(vacation.EndDate - vacation.StartDate).TotalDays + 1;
+                }
+
+                // Liczba dni urlopu przyznanych każdemu pracownikowi
+                int totalVacationDays = 26;
+
+                // Oblicz dostępne dni urlopu
+                int availableVacationDays = totalVacationDays - usedVacationDays;
+
+                ViewData["UsedVacationDays"] = usedVacationDays;
+                ViewData["AvailableVacationDays"] = availableVacationDays;
+                
+            }
             return View("Home");
         }
+
         else
         {
+
             return View();
         }
-    }
 
+
+        }
+   }
     
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
-}
-

@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Dodaj swój urlop";
+    Layout = "../Shared/_Layout_login.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/AddVacation.css" asp-append-version="true" />
+
+<div class="container mt-5">
+    <center><h2>Wypełnij formularz aby dodać swój urlop</h2></center></br>
+    <form id="vacation-form" method="post" asp-action="AddVacation">
+        <div class="form-group">
+            <label for="vacationName">Nazwa urlopu:</label>
+            <select id="vacationName" name="VacationName" class="form-control" required>
+                <option value="">Wybierz nazwę urlopu</option>
+                <option value="Urlop wypoczynkowy">Urlop wypoczynkowy</option>
+                <option value="Urlop zdrowotny">Urlop zdrowotny</option>
+                <option value="Urlop na żądanie">Urlop na żądanie</option>
+                <option value="Inny">Inny</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="startDate">Data rozpoczęcia:</label>
+            <input type="date" id="startDate" name="StartDate" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="endDate">Data zakończenia:</label>
+            <input type="date" id="endDate" name="EndDate" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="comment">Komentarz:</label>
+            <textarea id="comment" name="Comment" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Zapisz urlop</button>
+    </form>
+    <br />
+    @if (TempData["VacationAddedMessage"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["VacationAddedMessage"]
+        </div>
+    }
+</div>

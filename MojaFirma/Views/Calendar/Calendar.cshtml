@@ -1,0 +1,46 @@
+<MojaFirma.Models.Vacation>
+
+    @{
+        ViewData["Title"] = "Calendar";
+        Layout = "../Shared/_Layout_login.cshtml";
+
+
+
+        // Serializacja modelu do JavaScript
+        var events = Json.Serialize(Model);
+    }
+    <h2>Kalendarz urlopów</h2>
+    <div class="calendarContainer">
+        <div id="calendar"></div>
+    </div>
+
+    @section Scripts {
+        <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.1.0/main.min.js"></script>
+        <script src="~/js/pl.json"></script> <!-- Ścieżka do pliku tłumaczenia -->
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let events = @Html.Raw(events);
+
+            let calendarEl = document.getElementById('calendar');
+            let calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                events: events.map(event => ({
+                    title: `${event.title} (${event.userEmail || 'Brak adresu e-mail'})`,
+                    start: event.startDate,
+                    end: event.endDate
+                })),
+                locale: 'pl' 
+            });
+
+            calendar.render();
+        });
+        </script>
+    }
+

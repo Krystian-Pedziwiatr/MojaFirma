@@ -1,8 +1,6 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Witaj!";
     Layout = "../Shared/_Layout_login.cshtml";
-    
-
 }
 
 <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
@@ -11,10 +9,11 @@
     <div class="container">
         <div style="background-color: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 10px;">
             <h1>Witaj @User.Identity?.Name</h1>
-
-
+            <p>
+                Wykorzystane dni urlopu: @ViewData["UsedVacationDays"]
+                <br />
+                Dostępne dni urlopu: @ViewData["AvailableVacationDays"]
+            </p>
         </div>
     </div>
 </body>
-
-

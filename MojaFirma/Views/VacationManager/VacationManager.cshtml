@@ -1,0 +1,37 @@
+@model List<MojaFirma.Models.Vacation>
+
+@{
+    ViewData["Title"] = "Lista urlopów";
+    Layout = "../Shared/_Layout_login.cshtml";
+}
+
+<div class="container">
+    <h1>Lista urlopów</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nazwa urlopu</th>
+                <th>Data rozpoczęcia</th>
+                <th>Data zakończenia</th>
+                <th>Komentarz</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@Model[i].VacationName</td>
+                    <td>@Model[i].StartDate.ToShortDateString()</td>
+                    <td>@Model[i].EndDate.ToShortDateString()</td>
+                    <td>@Model[i].Comment</td>
+                    <td>
+                        <form asp-action="Delete" asp-route-id="@Model[i].Id" method="post" onsubmit="return confirm('Czy na pewno chcesz usunąć ten urlop?');">
+                            <button type="submit" class="btn btn-danger">Usuń</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

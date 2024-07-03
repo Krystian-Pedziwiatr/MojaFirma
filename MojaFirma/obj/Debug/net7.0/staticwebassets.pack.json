@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets/MojaFirma.bundle.scp.css"
     },
     {
+      "Id": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/css/AddVacation.css",
+      "PackagePath": "staticwebassets/css/AddVacation.css"
+    },
+    {
       "Id": "/Users/krystian/Projects/MojaFirma/MojaFirma/wwwroot/css/home.css",
       "PackagePath": "staticwebassets/css/home.css"
     },
